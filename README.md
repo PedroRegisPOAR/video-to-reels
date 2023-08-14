@@ -30,7 +30,7 @@ nix flake clone 'github:PedroRegisPOAR/video-to-reels/?ref=feature/nixfying' --d
 || nix develop --command $SHELL
 ```
 
-
+cd detect-face && npm install
 ## Running
 
 1. Open `detect-face` folder and run `npm install`;

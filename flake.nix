@@ -40,6 +40,7 @@
               coreutils
               ffmpeg-full
               nodejs
+              zx
 
               pleaseKeepMyInputs
             ];
@@ -57,6 +58,10 @@
               echo -e 'video' | "${pkgsAllowUnfree.figlet}/bin/figlet" | cat
               echo -e '       to' | "${pkgsAllowUnfree.figlet}/bin/figlet" | cat
               echo -e 'reels' | "${pkgsAllowUnfree.figlet}/bin/figlet" | cat
+
+              cd detect-face
+              test -d node_modules || npm install
+              cd ..
             '';
           };
         }
