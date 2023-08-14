@@ -6,3 +6,10 @@ tmp/*
 /videos/*
 !videos/.gitkeep
 *.DS_Store
+
+.idea/
+*.qcow2*
+result
+result-bin*
+.direnv
+.profiles/
