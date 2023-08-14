@@ -40,6 +40,7 @@
               coreutils
               ffmpeg-full
               nodejs
+              yt-dlp
               zx
 
               pleaseKeepMyInputs
@@ -62,6 +63,9 @@
               cd detect-face
               test -d node_modules || npm install
               cd ..
+
+              test -f origins/bard-replit.mp4 || yt-dlp --ignore-config -o bard-replit.mp4 -f mp4 XBGS6FnLwa4
+
             '';
           };
         }
