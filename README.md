@@ -22,6 +22,15 @@ nix flake clone 'git+ssh://git@github.com/PedroRegisPOAR/video-to-reels/?ref=fea
 || nix develop --command $SHELL
 ```
 
+No auth clone:
+```bash
+nix flake clone 'github:PedroRegisPOAR/video-to-reels/?ref=feature/nixfying' --dest video-to-reels \ 
+&& cd video-to-reels 1>/dev/null 2>/dev/null \
+&& (direnv --version 1>/dev/null 2>/dev/null && direnv allow) \
+|| nix develop --command $SHELL
+```
+
+
 ## Running
 
 1. Open `detect-face` folder and run `npm install`;
