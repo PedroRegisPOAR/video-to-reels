@@ -30,7 +30,10 @@ nix flake clone 'github:PedroRegisPOAR/video-to-reels/?ref=feature/nixfying' --d
 || nix develop --command $SHELL
 ```
 
-cd detect-face && npm install
+```bash
+zx convert.mjs -i origins/bard-replit.mp4
+```
+
 ## Running
 
 1. Open `detect-face` folder and run `npm install`;
