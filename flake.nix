@@ -39,6 +39,7 @@
               bashInteractive
               coreutils
               ffmpeg-full
+              imagemagick
               nodejs
               yt-dlp
               zx
