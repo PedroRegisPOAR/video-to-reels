@@ -66,7 +66,7 @@
               cd ..
 
               test -f origins/bard-replit.mp4 || (cd origins && yt-dlp --ignore-config -o bard-replit.mp4 -f mp4 XBGS6FnLwa4 && cd ..)
-              zx convert.mjs -i origins/bard-replit.mp4
+              # zx convert.mjs -i origins/bard-replit.mp4
             '';
           };
         }
