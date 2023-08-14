@@ -16,7 +16,7 @@ To run this script you need to install locally on your machine the following dep
 ### If you use nix
 
 ```bash
-nix flake clone 'git+ssh://git@github.com/diego3g/video-to-reels.git' --dest video-to-reels \
+nix flake clone 'git+ssh://git@github.com/PedroRegisPOAR/video-to-reels/?ref=feature/nixfying' --dest video-to-reels \
 && cd video-to-reels 1>/dev/null 2>/dev/null \
 && git checkout feature/nixfying \
 && (direnv --version 1>/dev/null 2>/dev/null && direnv allow) \
