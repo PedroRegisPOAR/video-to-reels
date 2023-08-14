@@ -42,6 +42,7 @@
               imagemagick
               nodejs
               yt-dlp
+              vlc
               zx
 
               pleaseKeepMyInputs
